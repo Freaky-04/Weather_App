@@ -28,7 +28,7 @@ class _CityPageState extends State<CityPage> {
   // String cityval = 'Nashik';
   Future getWeather() async {
     http.Response response = await http.get(Uri.parse(
-        'https://api.openweathermap.org/data/2.5/weather?q=${widget.text}&units=metric&appid=96c36b136a3f753d1d3c409f38e33ae1'));
+        'https://api.openweathermap.org/data/2.5/weather?q=${widget.text}&units=metric&appid="ENTER_YOUR_APIKEY"'));
     var result = jsonDecode(response.body);
     print("HEllo");
     print(widget.text);
