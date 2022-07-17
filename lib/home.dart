@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
       });
       //PLEASE USE WEATHER API FROM https://openweathermap.org/api
       http.Response response = await http.get(Uri.parse(
-          "http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=96c36b136a3f753d1d3c409f38e33ae1"));
+          "http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid="ENTER_YOUR_APIKEY""));
       var results = jsonDecode(response.body);
 
       setState(() {
